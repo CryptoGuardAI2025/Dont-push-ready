@@ -1,0 +1,46 @@
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 40px;
+}
+.subtitle {
+  font-size: 1.2em;
+  color: #ccc;
+}
+input, button {
+  padding: 12px;
+  font-size: 16px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
+#dontPush {
+  background: linear-gradient(to bottom, #ff3c3c, #c00000);
+  color: black;
+  font-size: 26px;
+  padding: 20px 60px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.7), inset 0 4px 6px rgba(255,255,255,0.4);
+  transition: all 0.2s ease-in-out;
+}
+#dontPush:hover {
+  transform: scale(1.05);
+}
+table {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid white;
+}

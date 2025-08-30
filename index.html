@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Don't Push - Firebase Version</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="lang-toggle">
+    <button id="lang-de" class="active">Deutsch</button>
+    <button id="lang-en">English</button>
+  </div>
+
+  <header>
+    <h1 data-de="Drück ihn nicht!" data-en="Don't Push It!">Drück ihn nicht!</h1>
+    <p class="subtitle" data-de="Der weltweit meistgeklickte verbotene Knopf" data-en="The world's most clicked forbidden button">
+      Der weltweit meistgeklickte verbotene Knopf
+    </p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p data-de="Willkommen! Du hast 3 Freiklicks pro Tag. Danach kannst du freiwillig weitere Klicks kaufen: 1 Klick = 0,30 €, 5 Klicks = 1,00 €."
+         data-en="Welcome! You have 3 free clicks per day. After that, you can optionally buy more: 1 click = €0.30, 5 clicks = €1.00.">
+         Willkommen! Du hast 3 Freiklicks pro Tag. Danach kannst du freiwillig weitere Klicks kaufen: 1 Klick = 0,30 €, 5 Klicks = 1,00 €.
+      </p>
+    </section>
+
+    <section class="name-entry">
+      <input type="text" id="username" placeholder="Dein einzigartiger Name / Your unique name">
+      <button id="submitName" data-de="Teilnehmen" data-en="Join">Teilnehmen</button>
+    </section>
+
+    <section class="button-area" style="display:none;">
+      <button id="dontPush">Don't Push</button>
+      <p class="pricing">1 Klick = 0,30 € | 5 Klicks = 1,00 €</p>
+      <p id="freeClicksLeft">Freiklicks übrig: 3</p>
+      <p id="globalClicks">Gesamtanzahl Klicks: ...</p>
+    </section>
+
+    <section class="leaderboard">
+      <h2 data-de="Rangliste" data-en="Leaderboard">Rangliste</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th data-de="Name" data-en="Name">Name</th>
+            <th data-de="Klicks" data-en="Clicks">Klicks</th>
+          </tr>
+        </thead>
+        <tbody id="leaderboardTable"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <a href="datenschutz.html" data-de="Datenschutz" data-en="Privacy Policy">Datenschutz</a> |
+    <a href="nutzungsbedingungen.html" data-de="AGB" data-en="Terms & Conditions">AGB</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
